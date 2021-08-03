@@ -16,5 +16,5 @@ def main():
     shutil.copytree("5g_research/", "5g_research_backup/")
 # The following line will create the directory if it does not exist already
 
-main()
-
+if __name__ == "__main__":
+    main()
