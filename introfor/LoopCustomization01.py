@@ -9,7 +9,9 @@ def main():
 
     for x in farms:
         print("\nThe farm is " + x.get("name"), end="")
-        print("\nThe farm " + x.get("name"), "has the following agriculture" + x.get("agriculture"), end="")
+        #print("\nThe farm " + x.get("name"), "has the following agriculture" + x.get("agriculture"), end="")-didnt work
+        #print("\nThe farm {x.get('name')} has the following agriculture {x.get('agriculture')}", end="")-solution
+        print("\nThe farm is", x.get("name"), "has the following agriculture", x.get("agriculture"), end="")#solution
         if x not in farms:
             print(" - NOT AN APPROVED AGRICULTURAL FARM", end="")
     print("\nOur loop has ended.") # print when loop has finished
